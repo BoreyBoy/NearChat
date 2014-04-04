@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		073A769118E945DA0039DBEF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073A769018E945DA0039DBEF /* CoreMotion.framework */; };
+		076E920618E2942800C20F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E920518E2942800C20F38 /* Foundation.framework */; };
+		076E920818E2942800C20F38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E920718E2942800C20F38 /* CoreGraphics.framework */; };
+		076E920A18E2942800C20F38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E920918E2942800C20F38 /* UIKit.framework */; };
+		076E921018E2942800C20F38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 076E920E18E2942800C20F38 /* InfoPlist.strings */; };
+		076E921218E2942800C20F38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E921118E2942800C20F38 /* main.m */; };
+		076E921618E2942800C20F38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E921518E2942800C20F38 /* AppDelegate.m */; };
+		076E921E18E2942800C20F38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076E921D18E2942800C20F38 /* Images.xcassets */; };
+		076E922518E2942800C20F38 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E922418E2942800C20F38 /* XCTest.framework */; };
+		076E922618E2942800C20F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E920518E2942800C20F38 /* Foundation.framework */; };
+		076E922718E2942800C20F38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E920918E2942800C20F38 /* UIKit.framework */; };
+		076E922F18E2942800C20F38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 076E922D18E2942800C20F38 /* InfoPlist.strings */; };
+		076E923118E2942800C20F38 /* NearChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E923018E2942800C20F38 /* NearChatTests.m */; };
+		076E923B18E2944800C20F38 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E923A18E2944700C20F38 /* MultipeerConnectivity.framework */; };
+		076E924118E2B51A00C20F38 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E924018E2B51A00C20F38 /* CoreBluetooth.framework */; };
+		076E924318E2B52500C20F38 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076E924218E2B52500C20F38 /* CoreLocation.framework */; };
+		076E924718E2BF1600C20F38 /* CTMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E924518E2BF1600C20F38 /* CTMainController.m */; };
+		076E924818E2BF1600C20F38 /* CTMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076E924618E2BF1600C20F38 /* CTMainController.xib */; };
+		076E925018E2C0B800C20F38 /* CTMsgImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E924B18E2C0B800C20F38 /* CTMsgImage.m */; };
+		076E925118E2C0B800C20F38 /* CTMsgProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E924D18E2C0B800C20F38 /* CTMsgProgress.m */; };
+		076E925218E2C0B800C20F38 /* CTMsgText.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E924F18E2C0B800C20F38 /* CTMsgText.m */; };
+		076E925518E2C17D00C20F38 /* Transcript.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E925418E2C17D00C20F38 /* Transcript.m */; };
+		076E925818E2C2BB00C20F38 /* ProgressObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E925718E2C2BB00C20F38 /* ProgressObserver.m */; };
+		076E925B18E2C55900C20F38 /* SessionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E925A18E2C55900C20F38 /* SessionContainer.m */; };
+		076E925F18E2D00E00C20F38 /* CTMsgImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E925D18E2D00E00C20F38 /* CTMsgImageCell.m */; };
+		076E926018E2D00E00C20F38 /* CTMsgImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076E925E18E2D00E00C20F38 /* CTMsgImageCell.xib */; };
+		076E926318E2D0E600C20F38 /* CTMsgProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E926218E2D0E600C20F38 /* CTMsgProgressCell.m */; };
+		076E926518E2D0F800C20F38 /* CTMsgProgressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076E926418E2D0F800C20F38 /* CTMsgProgressCell.xib */; };
+		076E926918E2D11000C20F38 /* CTMsgTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E926718E2D11000C20F38 /* CTMsgTextCell.m */; };
+		076E926A18E2D11000C20F38 /* CTMsgTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076E926818E2D11000C20F38 /* CTMsgTextCell.xib */; };
+		076E926F18E2D19000C20F38 /* UITableViewCell+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E926E18E2D19000C20F38 /* UITableViewCell+CTExtensions.m */; };
+		076E927218E2D26200C20F38 /* UIView+CTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 076E927118E2D26200C20F38 /* UIView+CTExtensions.m */; };
+		076E927518E2D4E600C20F38 /* bubble-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 076E927318E2D4E600C20F38 /* bubble-right@2x.png */; };
+		076E927618E2D4E600C20F38 /* PhotoButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 076E927418E2D4E600C20F38 /* PhotoButton@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		076E922818E2942800C20F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 076E91FA18E2942800C20F38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 076E920118E2942800C20F38;
+			remoteInfo = NearChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		073A769018E945DA0039DBEF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		076E920218E2942800C20F38 /* NearChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		076E920518E2942800C20F38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		076E920718E2942800C20F38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		076E920918E2942800C20F38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		076E920D18E2942800C20F38 /* NearChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NearChat-Info.plist"; sourceTree = "<group>"; };
+		076E920F18E2942800C20F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		076E921118E2942800C20F38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		076E921318E2942800C20F38 /* NearChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NearChat-Prefix.pch"; sourceTree = "<group>"; };
+		076E921418E2942800C20F38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		076E921518E2942800C20F38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		076E921D18E2942800C20F38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		076E922318E2942800C20F38 /* NearChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NearChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		076E922418E2942800C20F38 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		076E922C18E2942800C20F38 /* NearChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NearChatTests-Info.plist"; sourceTree = "<group>"; };
+		076E922E18E2942800C20F38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		076E923018E2942800C20F38 /* NearChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NearChatTests.m; sourceTree = "<group>"; };
+		076E923A18E2944700C20F38 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		076E924018E2B51A00C20F38 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		076E924218E2B52500C20F38 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		076E924418E2BF1600C20F38 /* CTMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMainController.h; sourceTree = "<group>"; };
+		076E924518E2BF1600C20F38 /* CTMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMainController.m; sourceTree = "<group>"; };
+		076E924618E2BF1600C20F38 /* CTMainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTMainController.xib; sourceTree = "<group>"; };
+		076E924A18E2C0B800C20F38 /* CTMsgImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMsgImage.h; sourceTree = "<group>"; };
+		076E924B18E2C0B800C20F38 /* CTMsgImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMsgImage.m; sourceTree = "<group>"; };
+		076E924C18E2C0B800C20F38 /* CTMsgProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMsgProgress.h; sourceTree = "<group>"; };
+		076E924D18E2C0B800C20F38 /* CTMsgProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMsgProgress.m; sourceTree = "<group>"; };
+		076E924E18E2C0B800C20F38 /* CTMsgText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMsgText.h; sourceTree = "<group>"; };
+		076E924F18E2C0B800C20F38 /* CTMsgText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMsgText.m; sourceTree = "<group>"; };
+		076E925318E2C17D00C20F38 /* Transcript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transcript.h; sourceTree = "<group>"; };
+		076E925418E2C17D00C20F38 /* Transcript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Transcript.m; sourceTree = "<group>"; };
+		076E925618E2C2BB00C20F38 /* ProgressObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressObserver.h; sourceTree = "<group>"; };
+		076E925718E2C2BB00C20F38 /* ProgressObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressObserver.m; sourceTree = "<group>"; };
+		076E925918E2C55900C20F38 /* SessionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionContainer.h; sourceTree = "<group>"; };
+		076E925A18E2C55900C20F38 /* SessionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionContainer.m; sourceTree = "<group>"; };
+		076E925C18E2D00E00C20F38 /* CTMsgImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMsgImageCell.h; sourceTree = "<group>"; };
+		076E925D18E2D00E00C20F38 /* CTMsgImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMsgImageCell.m; sourceTree = "<group>"; };
+		076E925E18E2D00E00C20F38 /* CTMsgImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTMsgImageCell.xib; sourceTree = "<group>"; };
+		076E926118E2D0E600C20F38 /* CTMsgProgressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMsgProgressCell.h; sourceTree = "<group>"; };
+		076E926218E2D0E600C20F38 /* CTMsgProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMsgProgressCell.m; sourceTree = "<group>"; };
+		076E926418E2D0F800C20F38 /* CTMsgProgressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTMsgProgressCell.xib; sourceTree = "<group>"; };
+		076E926618E2D11000C20F38 /* CTMsgTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMsgTextCell.h; sourceTree = "<group>"; };
+		076E926718E2D11000C20F38 /* CTMsgTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMsgTextCell.m; sourceTree = "<group>"; };
+		076E926818E2D11000C20F38 /* CTMsgTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTMsgTextCell.xib; sourceTree = "<group>"; };
+		076E926D18E2D19000C20F38 /* UITableViewCell+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CTExtensions.h"; sourceTree = "<group>"; };
+		076E926E18E2D19000C20F38 /* UITableViewCell+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CTExtensions.m"; sourceTree = "<group>"; };
+		076E927018E2D26200C20F38 /* UIView+CTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CTExtensions.h"; sourceTree = "<group>"; };
+		076E927118E2D26200C20F38 /* UIView+CTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CTExtensions.m"; sourceTree = "<group>"; };
+		076E927318E2D4E600C20F38 /* bubble-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble-right@2x.png"; sourceTree = "<group>"; };
+		076E927418E2D4E600C20F38 /* PhotoButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PhotoButton@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		076E91FF18E2942800C20F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				073A769118E945DA0039DBEF /* CoreMotion.framework in Frameworks */,
+				076E924318E2B52500C20F38 /* CoreLocation.framework in Frameworks */,
+				076E924118E2B51A00C20F38 /* CoreBluetooth.framework in Frameworks */,
+				076E923B18E2944800C20F38 /* MultipeerConnectivity.framework in Frameworks */,
+				076E920818E2942800C20F38 /* CoreGraphics.framework in Frameworks */,
+				076E920A18E2942800C20F38 /* UIKit.framework in Frameworks */,
+				076E920618E2942800C20F38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		076E922018E2942800C20F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076E922518E2942800C20F38 /* XCTest.framework in Frameworks */,
+				076E922718E2942800C20F38 /* UIKit.framework in Frameworks */,
+				076E922618E2942800C20F38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		076E91F918E2942800C20F38 = {
+			isa = PBXGroup;
+			children = (
+				076E920B18E2942800C20F38 /* NearChat */,
+				076E922A18E2942800C20F38 /* NearChatTests */,
+				076E920418E2942800C20F38 /* Frameworks */,
+				076E920318E2942800C20F38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		076E920318E2942800C20F38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				076E920218E2942800C20F38 /* NearChat.app */,
+				076E922318E2942800C20F38 /* NearChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		076E920418E2942800C20F38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				073A769018E945DA0039DBEF /* CoreMotion.framework */,
+				076E924218E2B52500C20F38 /* CoreLocation.framework */,
+				076E924018E2B51A00C20F38 /* CoreBluetooth.framework */,
+				076E923A18E2944700C20F38 /* MultipeerConnectivity.framework */,
+				076E920518E2942800C20F38 /* Foundation.framework */,
+				076E920718E2942800C20F38 /* CoreGraphics.framework */,
+				076E920918E2942800C20F38 /* UIKit.framework */,
+				076E922418E2942800C20F38 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		076E920B18E2942800C20F38 /* NearChat */ = {
+			isa = PBXGroup;
+			children = (
+				076E924918E2C0B800C20F38 /* Msg */,
+				076E921418E2942800C20F38 /* AppDelegate.h */,
+				076E921518E2942800C20F38 /* AppDelegate.m */,
+				076E926D18E2D19000C20F38 /* UITableViewCell+CTExtensions.h */,
+				076E926E18E2D19000C20F38 /* UITableViewCell+CTExtensions.m */,
+				076E927018E2D26200C20F38 /* UIView+CTExtensions.h */,
+				076E927118E2D26200C20F38 /* UIView+CTExtensions.m */,
+				076E925C18E2D00E00C20F38 /* CTMsgImageCell.h */,
+				076E925D18E2D00E00C20F38 /* CTMsgImageCell.m */,
+				076E925E18E2D00E00C20F38 /* CTMsgImageCell.xib */,
+				076E926118E2D0E600C20F38 /* CTMsgProgressCell.h */,
+				076E926218E2D0E600C20F38 /* CTMsgProgressCell.m */,
+				076E926418E2D0F800C20F38 /* CTMsgProgressCell.xib */,
+				076E926618E2D11000C20F38 /* CTMsgTextCell.h */,
+				076E926718E2D11000C20F38 /* CTMsgTextCell.m */,
+				076E926818E2D11000C20F38 /* CTMsgTextCell.xib */,
+				076E924418E2BF1600C20F38 /* CTMainController.h */,
+				076E924518E2BF1600C20F38 /* CTMainController.m */,
+				076E924618E2BF1600C20F38 /* CTMainController.xib */,
+				076E921D18E2942800C20F38 /* Images.xcassets */,
+				076E920C18E2942800C20F38 /* Supporting Files */,
+			);
+			path = NearChat;
+			sourceTree = "<group>";
+		};
+		076E920C18E2942800C20F38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				076E927318E2D4E600C20F38 /* bubble-right@2x.png */,
+				076E927418E2D4E600C20F38 /* PhotoButton@2x.png */,
+				076E920D18E2942800C20F38 /* NearChat-Info.plist */,
+				076E920E18E2942800C20F38 /* InfoPlist.strings */,
+				076E921118E2942800C20F38 /* main.m */,
+				076E921318E2942800C20F38 /* NearChat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		076E922A18E2942800C20F38 /* NearChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				076E923018E2942800C20F38 /* NearChatTests.m */,
+				076E922B18E2942800C20F38 /* Supporting Files */,
+			);
+			path = NearChatTests;
+			sourceTree = "<group>";
+		};
+		076E922B18E2942800C20F38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				076E922C18E2942800C20F38 /* NearChatTests-Info.plist */,
+				076E922D18E2942800C20F38 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		076E924918E2C0B800C20F38 /* Msg */ = {
+			isa = PBXGroup;
+			children = (
+				076E925918E2C55900C20F38 /* SessionContainer.h */,
+				076E925A18E2C55900C20F38 /* SessionContainer.m */,
+				076E925318E2C17D00C20F38 /* Transcript.h */,
+				076E925418E2C17D00C20F38 /* Transcript.m */,
+				076E925618E2C2BB00C20F38 /* ProgressObserver.h */,
+				076E925718E2C2BB00C20F38 /* ProgressObserver.m */,
+				076E924A18E2C0B800C20F38 /* CTMsgImage.h */,
+				076E924B18E2C0B800C20F38 /* CTMsgImage.m */,
+				076E924C18E2C0B800C20F38 /* CTMsgProgress.h */,
+				076E924D18E2C0B800C20F38 /* CTMsgProgress.m */,
+				076E924E18E2C0B800C20F38 /* CTMsgText.h */,
+				076E924F18E2C0B800C20F38 /* CTMsgText.m */,
+			);
+			path = Msg;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		076E920118E2942800C20F38 /* NearChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 076E923418E2942800C20F38 /* Build configuration list for PBXNativeTarget "NearChat" */;
+			buildPhases = (
+				076E91FE18E2942800C20F38 /* Sources */,
+				076E91FF18E2942800C20F38 /* Frameworks */,
+				076E920018E2942800C20F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NearChat;
+			productName = NearChat;
+			productReference = 076E920218E2942800C20F38 /* NearChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		076E922218E2942800C20F38 /* NearChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 076E923718E2942800C20F38 /* Build configuration list for PBXNativeTarget "NearChatTests" */;
+			buildPhases = (
+				076E921F18E2942800C20F38 /* Sources */,
+				076E922018E2942800C20F38 /* Frameworks */,
+				076E922118E2942800C20F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				076E922918E2942800C20F38 /* PBXTargetDependency */,
+			);
+			name = NearChatTests;
+			productName = NearChatTests;
+			productReference = 076E922318E2942800C20F38 /* NearChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		076E91FA18E2942800C20F38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ctrip;
+				TargetAttributes = {
+					076E920118E2942800C20F38 = {
+						DevelopmentTeam = 3CGNXWL2E3;
+					};
+					076E922218E2942800C20F38 = {
+						TestTargetID = 076E920118E2942800C20F38;
+					};
+				};
+			};
+			buildConfigurationList = 076E91FD18E2942800C20F38 /* Build configuration list for PBXProject "NearChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 076E91F918E2942800C20F38;
+			productRefGroup = 076E920318E2942800C20F38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				076E920118E2942800C20F38 /* NearChat */,
+				076E922218E2942800C20F38 /* NearChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		076E920018E2942800C20F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076E927518E2D4E600C20F38 /* bubble-right@2x.png in Resources */,
+				076E926018E2D00E00C20F38 /* CTMsgImageCell.xib in Resources */,
+				076E921E18E2942800C20F38 /* Images.xcassets in Resources */,
+				076E926518E2D0F800C20F38 /* CTMsgProgressCell.xib in Resources */,
+				076E924818E2BF1600C20F38 /* CTMainController.xib in Resources */,
+				076E927618E2D4E600C20F38 /* PhotoButton@2x.png in Resources */,
+				076E921018E2942800C20F38 /* InfoPlist.strings in Resources */,
+				076E926A18E2D11000C20F38 /* CTMsgTextCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		076E922118E2942800C20F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076E922F18E2942800C20F38 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		076E91FE18E2942800C20F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076E925118E2C0B800C20F38 /* CTMsgProgress.m in Sources */,
+				076E926918E2D11000C20F38 /* CTMsgTextCell.m in Sources */,
+				076E926318E2D0E600C20F38 /* CTMsgProgressCell.m in Sources */,
+				076E925018E2C0B800C20F38 /* CTMsgImage.m in Sources */,
+				076E925F18E2D00E00C20F38 /* CTMsgImageCell.m in Sources */,
+				076E925818E2C2BB00C20F38 /* ProgressObserver.m in Sources */,
+				076E924718E2BF1600C20F38 /* CTMainController.m in Sources */,
+				076E921618E2942800C20F38 /* AppDelegate.m in Sources */,
+				076E926F18E2D19000C20F38 /* UITableViewCell+CTExtensions.m in Sources */,
+				076E925B18E2C55900C20F38 /* SessionContainer.m in Sources */,
+				076E921218E2942800C20F38 /* main.m in Sources */,
+				076E927218E2D26200C20F38 /* UIView+CTExtensions.m in Sources */,
+				076E925218E2C0B800C20F38 /* CTMsgText.m in Sources */,
+				076E925518E2C17D00C20F38 /* Transcript.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		076E921F18E2942800C20F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076E923118E2942800C20F38 /* NearChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		076E922918E2942800C20F38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 076E920118E2942800C20F38 /* NearChat */;
+			targetProxy = 076E922818E2942800C20F38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		076E920E18E2942800C20F38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				076E920F18E2942800C20F38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		076E922D18E2942800C20F38 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				076E922E18E2942800C20F38 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		076E923218E2942800C20F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		076E923318E2942800C20F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		076E923518E2942800C20F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearChat/NearChat-Prefix.pch";
+				INFOPLIST_FILE = "NearChat/NearChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		076E923618E2942800C20F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearChat/NearChat-Prefix.pch";
+				INFOPLIST_FILE = "NearChat/NearChat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		076E923818E2942800C20F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NearChat.app/NearChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearChat/NearChat-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NearChatTests/NearChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		076E923918E2942800C20F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NearChat.app/NearChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NearChat/NearChat-Prefix.pch";
+				INFOPLIST_FILE = "NearChatTests/NearChatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		076E91FD18E2942800C20F38 /* Build configuration list for PBXProject "NearChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				076E923218E2942800C20F38 /* Debug */,
+				076E923318E2942800C20F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		076E923418E2942800C20F38 /* Build configuration list for PBXNativeTarget "NearChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				076E923518E2942800C20F38 /* Debug */,
+				076E923618E2942800C20F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		076E923718E2942800C20F38 /* Build configuration list for PBXNativeTarget "NearChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				076E923818E2942800C20F38 /* Debug */,
+				076E923918E2942800C20F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 076E91FA18E2942800C20F38 /* Project object */;
+}
